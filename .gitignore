@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+/build/
+CIL-config.h

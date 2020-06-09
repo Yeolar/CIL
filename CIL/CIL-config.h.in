@@ -1,0 +1,15 @@
+#pragma once
+
+/* meta */
+
+#define CIL_PACKAGE "@PROJECT_NAME@"
+#define CIL_VERSION "@VERSION_MAJOR@.@VERSION_MINOR@.@VERSION_PATCH@"
+
+/* compile tests for keyword, lib, function, ... */
+
+#cmakedefine CIL_HAVE_XSI_STRERROR_R 1
+
+/* gflags */
+
+#cmakedefine CIL_GFLAGS_NAMESPACE @CIL_GFLAGS_NAMESPACE@
+#cmakedefine CIL_UNUSUAL_GFLAGS_NAMESPACE 1
