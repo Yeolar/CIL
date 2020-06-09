@@ -188,6 +188,4 @@ class CIL_EXPORTS NAryMatIterator {
   size_t idx;
 };
 
-#include "CIL/mat/iterator_impl.h"
-
 } // namespace cil

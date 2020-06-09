@@ -6,7 +6,6 @@
 #include "CIL/parallel.h"
 #include "CIL/singleton.h"
 #include "CIL/tls.h"
-#include "CIL/types.h"
 #include "CIL/xadd.h"
 
 #ifdef HAVE_PTHREADS_PF
@@ -125,6 +124,9 @@ class ThreadManager {
     manager.m_pool_state = eTMNotInited;
   }
 
+  ThreadManager();
+  ~ThreadManager();
+
   void run(const Range& range, const ParallelLoopBody& body, double nstripes);
 
   size_t getNumOfThreads();
@@ -132,10 +134,6 @@ class ThreadManager {
   void setNumOfThreads(size_t n);
 
  private:
-  ThreadManager();
-
-  ~ThreadManager();
-
   void wait_complete();
 
   void notify_complete();

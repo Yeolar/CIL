@@ -31,5 +31,6 @@
 *.out
 *.app
 
+*.pyc
 /build/
 CIL-config.h

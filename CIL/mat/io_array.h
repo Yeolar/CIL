@@ -218,6 +218,4 @@ typedef InputOutputArray InputOutputArrayOfArrays;
 
 CIL_EXPORTS InputOutputArray noArray();
 
-#include "CIL/mat/io_array_impl.h"
-
 } // namespace cil

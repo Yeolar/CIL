@@ -1519,6 +1519,10 @@ typedef Mat_<Vec2d> Mat2d;
 typedef Mat_<Vec3d> Mat3d;
 typedef Mat_<Vec4d> Mat4d;
 
+#include "CIL/mat/io_array_impl.h"
+
+#include "CIL/mat/iterator_impl.h"
+
 #include "CIL/mat/mat_impl.h"
 
 } // namespace cil
